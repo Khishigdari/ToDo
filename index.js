@@ -9,7 +9,7 @@ body.appendChild(input);
 body.appendChild(button);
 body.appendChild(ul);
 
-const data = [];
+let data = [];
 
 const addTodo = (value) => {
   data.push(value);

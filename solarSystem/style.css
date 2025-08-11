@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  /* background: url("https://ichef.bbci.co.uk/ace/standard/764/cpsprodpb/bfa9/live/2f0070f0-064a-11f0-9772-ff798c71c39e.jpg"); */
+  width: 100vw;
+  height: 100vh;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.container {
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+  background-color: rgb(35, 35, 52);
+}
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border: 1px dashed white;
+  border-radius: 50%;
+}
+
+.sun-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 180px;
+}
+
+@keyframes container {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes planet {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.neptune {
+  width: 1000px;
+  height: 1000px;
+  animation: container 450s linear infinite;
+}
+
+.neptune-planet {
+  width: 30px;
+  height: 30px;
+  animation: planet 1s infinite linear;
+}
+
+.uranus {
+  width: 900px;
+  height: 900px;
+  animation: container 350s linear infinite;
+}
+
+.uranus-planet {
+  width: 30px;
+  height: 30px;
+  animation: planet 1s infinite linear;
+}
+
+.saturn {
+  width: 800px;
+  height: 800px;
+  animation: container 250s linear infinite;
+}
+
+.saturn-planet {
+  width: 40px;
+  height: 40px;
+  animation: planet 0.7s infinite linear;
+}
+
+.jupiter {
+  width: 700px;
+  height: 700px;
+  animation: container 150s linear infinite;
+}
+
+.jupiter-planet {
+  width: 55px;
+  height: 55px;
+  animation: planet 0.7s infinite linear;
+}
+
+.mars {
+  width: 600px;
+  height: 600px;
+  animation: container 90s linear infinite;
+}
+
+.mars-planet {
+  width: 25px;
+  height: 25px;
+  animation: planet 0.9s infinite linear;
+}
+
+.earth {
+  width: 500px;
+  height: 500px;
+  animation: container 75s linear infinite;
+}
+
+.earth-planet {
+  width: 35px;
+  height: 35px;
+  animation: planet 1s infinite linear;
+}
+
+.venus {
+  width: 400px;
+  height: 400px;
+  animation: container 25s linear infinite;
+}
+
+.venus-planet {
+  width: 25px;
+  height: 25px;
+  animation: planet 10s infinite linear;
+}
+
+.mercury {
+  width: 300px;
+  height: 300px;
+  animation: container 10s linear infinite;
+}
+
+.mercury-planet {
+  width: 25px;
+  height: 25px;
+  animation: planet 7s infinite linear;
+}
+
+.orbit {
+  /* width: 50px;
+  height: 50px; */
+  margin-left: 50%;
+  margin-top: -25px;
+  transform: translateX(50%);
+}

@@ -38,3 +38,17 @@ body {
 button {
   width: 40px;
 }
+
+button:hover {
+  background-color: rgb(74, 146, 122);
+  box-shadow: 3px 3px 5px rgb(39, 46, 68);
+  border: 0;
+  transition: 0.8s;
+  scale: 1.1;
+  border-radius: 5px;
+}
+
+.resetBtn {
+  display: flex;
+  justify-content: center;
+}

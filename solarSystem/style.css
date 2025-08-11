@@ -11,7 +11,13 @@ body {
   width: 100vw;
   height: 120vh;
   position: relative;
-  background-color: rgb(35, 35, 52);
+  /* background-color: rgb(35, 35, 52); */
+  background-image: radial-gradient(
+    circle,
+    rgb(38, 23, 48) 0%,
+    rgb(43, 56, 143) 100%,
+    rgb(39, 41, 132) 50%
+  );
 }
 
 .box {

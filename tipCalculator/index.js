@@ -18,12 +18,15 @@ const reset = document.createElement("button");
 inputAmount.style.width = "100%";
 inputAmount.style.border = "0";
 reset.style.width = "100%";
+
 divBtn.style.display = "flex";
 divBtn.style.flexWrap = "wrap";
 divBtn.style.gap = "13px";
-reset.style.borderRadius = "5px";
+reset.style.borderRadius = "2px";
 inputAmount.style.borderRadius = "2px";
 divContainer.classList.add("container");
+// btn5.classList.add("animationBtn");
+// reset.classList.add("resetBtn");
 // divBtn.classList.add("btnContainer");
 // button.classList.add("btn");
 

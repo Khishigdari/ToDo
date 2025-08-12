@@ -117,19 +117,3 @@ divBtn.appendChild(btn65);
 divBtn.appendChild(btn80);
 divContainer.appendChild(pTotal);
 divContainer.appendChild(reset);
-
-// 8. Бүх машины үнийг 15% нэмдэг функц бич.
-// function increaseCarPrices(cars) {
-//   let filtered = cars.map((car) => {
-//     return {
-//       ...car,
-//       price: car.price + (car.price * 15) / 100,
-//     };
-//   });
-//   return filtered;
-// }
-// const priceIncreasedByFifteenPercent = increaseCarPrices(cars);
-// console.log(
-//   "Price Increased By Fifteen Percent:",
-//   priceIncreasedByFifteenPercent
-// );

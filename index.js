@@ -20,9 +20,19 @@ const createElement = (value) => {
   const x = document.createElement("button");
   li.innerText = value;
   x.innerText = "x";
+
+  x.addEventListener("click", () => {
+    const newData = data.filter((element) => element !== value);
+    data = newData;
+    render();
+    // li.remove();
+  });
+
   li.appendChild(x);
   ul.appendChild(li);
 };
+
+const removeElement = () => {};
 
 const render = () => {
   ul.innerHTML = "";

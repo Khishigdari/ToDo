@@ -43,8 +43,6 @@ btn80.innerText = "80%";
 let total = (pTotal.innerText = "0.00");
 reset.innerText = "Reset";
 
-// let data = [];
-// input.type = "text";
 reset.addEventListener("click", () => {
   inputAmount.value = "";
   pTotal.innerText = "0.00";
@@ -98,9 +96,6 @@ btn80.addEventListener("click", () => {
   let tip = parseInt(inputAmount.value * 1.8);
   pTotal.innerText += "Total: " + tip;
 });
-// reset.addEventListener("click", () => {
-//   inputAmount = "";
-// });
 
 body.appendChild(divContainer);
 divContainer.appendChild(pBill);

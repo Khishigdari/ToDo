@@ -56,3 +56,12 @@ function resetTimer() {
   minCounter.innerText = minut + "min : ";
   hourCounter.innerText = hour + "hr : ";
 }
+
+const printDate = () => {
+  const date = new Date().toString();
+  //   const realtimeDate = date.split(" ")[4];
+  //   document.querySelector("#time").innerText = realtimeDate;
+  document.querySelector("#time").innerText = date;
+  //   console.log(date, "date");
+};
+setInterval(printDate, 1000);

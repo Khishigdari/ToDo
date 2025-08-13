@@ -1,13 +1,21 @@
 const counterDiv = document.getElementById("counter");
 const minCounter = document.getElementById("minCounter");
 const hourCounter = document.getElementById("hourCounter");
+const mlsCounter = document.getElementById("mlsCounter"); // ==========
 let second = 0;
 let minut = 0;
 let hour = 0;
+let mls = 0; // ==========
 let interval;
-counterDiv.innerText = second + "sec";
+mlsCounter.innerText = mls + "ms"; // ==========
+counterDiv.innerText = second + "sec : ";
 minCounter.innerText = minut + "min : ";
 hourCounter.innerText = hour + "hr : ";
+
+function addMls() {
+  // ==========
+  mls++;
+}
 
 function addSecond() {
   second++;
@@ -21,6 +29,11 @@ function addSecond() {
   //   } else {
   //     minCounter.innerText = minut + "min :";
   //   }
+  if (mls === 99) {
+    // ==========
+    second++;
+    mls = 0;
+  }
   if (second === 60) {
     minut++;
     second = 0;
@@ -29,7 +42,8 @@ function addSecond() {
     hour++;
     minut = 0;
   }
-  counterDiv.innerText = second + "sec";
+  mlsCounter.innerText = mls + "ms"; // ==========
+  counterDiv.innerText = second + "sec : ";
   minCounter.innerText = minut + "min : ";
   hourCounter.innerText = hour + "hr : ";
 }
@@ -38,6 +52,7 @@ function startTimer() {
   clearInterval(interval);
 
   interval = setInterval(addSecond, 1000);
+  interval = setInterval(addMls, 100); // ==========
 }
 
 function stopTimer() {
@@ -46,13 +61,15 @@ function stopTimer() {
 
 function resetTimer() {
   stopTimer();
+  mls = 0; // ==========
   second = 0;
   minut = 0;
   hour = 0;
   //   counterDiv.innerText = "0" + second + "sec";
   //   minCounter.innerText = "0" + minut + "min : ";
   //   hourCounter.innerText = "0" + hour + "hr : ";
-  counterDiv.innerText = second + "sec";
+  mlsCounter.innerText = mls + "ms"; // ==========
+  counterDiv.innerText = second + "sec : ";
   minCounter.innerText = minut + "min : ";
   hourCounter.innerText = hour + "hr : ";
 }

@@ -12,13 +12,16 @@ counterDiv.innerText = second + "sec : ";
 minCounter.innerText = minut + "min : ";
 hourCounter.innerText = hour + "hr : ";
 
-function addMls() {
-  // ==========
-  mls++;
-}
+// function addMls() {
+// ==========
+//   mls++;
+// }
 
-function addSecond() {
-  second++;
+function addMiSecond() {
+  mls++;
+  // second++;
+  // minut++;
+  // hour++;
   //   if (second < 10) {
   //     counterDiv.innerText = "0" + second + "sec";
   //   } else {
@@ -51,8 +54,8 @@ function addSecond() {
 function startTimer() {
   clearInterval(interval);
 
-  interval = setInterval(addSecond, 1000);
-  interval = setInterval(addMls, 100); // ==========
+  interval = setInterval(addMiSecond, 10);
+  // interval = setInterval(addMls, 100); // ==========
 }
 
 function stopTimer() {

@@ -21,7 +21,7 @@ reset.style.width = "100%";
 
 divBtn.style.display = "flex";
 divBtn.style.flexWrap = "wrap";
-divBtn.style.gap = "13px";
+divBtn.style.gap = "20px";
 reset.style.borderRadius = "2px";
 inputAmount.style.borderRadius = "2px";
 divContainer.classList.add("container");
